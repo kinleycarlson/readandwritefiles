@@ -4,7 +4,7 @@ infile = open('customers.csv','r')
 
 csvfile = csv.reader(infile, delimiter = ',')
 
-next(csv) ##skips the first line(header)
+next(csvfile) ##skips the first line(header)
 
 for record in csvfile:  
     print('Student ID:',record[0])
