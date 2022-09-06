@@ -13,9 +13,11 @@ for record in csvfile:
         total_steps += int(record [1])
         counter +=1
     else:
-        avg_steps = total_steps/counter 
-        print(format(avg_steps,'.2f'))
+        avg_steps = format(total_steps/counter,'.2f') 
+        print(avg_steps)
         month = record[0]
+        print(month)
+        outfile.write(month+ ', '+str(avg_steps)+'\n')
         counter = 1
         total_steps =0
 
