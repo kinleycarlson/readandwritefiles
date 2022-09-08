@@ -16,7 +16,7 @@ for record in csvfile:
         avg_steps = format(total_steps/counter,'.2f') 
         outfile.write(month_list[int(month)-1]+ ', '+str(avg_steps)+'\n')
         counter = 0
-        total_steps =0
+        total_steps = float(record[1])
         month = record[0]
 avg_steps = format(total_steps/counter,'.2f') 
 outfile.write(month_list[int(month)-1]+ ', '+str(avg_steps)+'\n')
